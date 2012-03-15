@@ -42,6 +42,8 @@ App::uses('View', 'View');
  */
 class PdfView extends View
 {
+	public $subDir = 'pdf';
+	
 	public function __construct($controller)
 	{
 		parent::__construct($controller);
