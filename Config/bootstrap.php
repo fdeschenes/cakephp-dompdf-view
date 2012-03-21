@@ -9,6 +9,8 @@
  */
 
 App::uses('PdfView', 'cakephp-dompdf-view.View');
-App::load('PdfView');
+if (version_compare(Configure::version(), '2.1.1', '<')) {
+	App::load('PdfView');
+}
 
 Configure::load('cakephp-dompdf-view.Dompdf');

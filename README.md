@@ -13,7 +13,7 @@ Download the repository and extract the archive to a folder called `cakephp-domp
 Download [dompdf 0.6](http://code.google.com/p/dompdf/downloads/list) and move the content of the archive to `Plugin/cakephp-dompdf-view/Vendor/dompdf`.
 
 ### Cache Permissions
-A paragraph about changing the permissions on `APP/tmp/dompdf` will eventually go here.
+Please create a cache folder for dompdf called `dompdf` in `APP/tmp/cache` and change the permissions to 777.
 
 ## Usage
 Because of the tight integration between this plugin and CakePHP, there's only a few things you have to do to get started.

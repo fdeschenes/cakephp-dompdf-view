@@ -13,5 +13,5 @@ $config['Dompdf'] = array(
 	'enablePhp' => false,
 	'enableRemote' => true,
 	'dpi' => 72,
-	'tempDir' => TMP . DS . 'dompdf'
+	'tempDir' => CACHE . 'dompdf'
 );
