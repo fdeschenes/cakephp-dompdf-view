@@ -7,10 +7,10 @@ This plugin for the CakePHP Framework allows you to use the dompdf HTML to PDF c
 - [dompdf 0.6+](http://code.google.com/p/dompdf)
 
 ## Installation
-Download the repository and extract the archive to a folder called `cakephp-dompdf-view` in your Plugin folder.
+Download the repository and extract the archive to a folder called `Dompdf` in your Plugin folder.
 
 ### Vendor Files
-Download [dompdf 0.6](http://code.google.com/p/dompdf/downloads/list) and move the content of the archive to `Plugin/cakephp-dompdf-view/Vendor/dompdf`.
+Download [dompdf 0.6](http://code.google.com/p/dompdf/downloads/list) and move the content of the archive to `Plugin/Dompdf/Vendor/dompdf`.
 
 ### Cache Permissions
 Please create a cache folder for dompdf called `dompdf` in `APP/tmp/cache` and change the permissions to 777.
@@ -19,12 +19,12 @@ Please create a cache folder for dompdf called `dompdf` in `APP/tmp/cache` and c
 Because of the tight integration between this plugin and CakePHP, there's only a few things you have to do to get started.
 
 1. Load the plugin by adding 
-`CakePlugin::load('cakephp-dompdf-view', array('bootstrap' => true));` to `APP/Config/bootstrap.php`.
+`CakePlugin::load('Dompdf', array('bootstrap' => true));` to `APP/Config/bootstrap.php`.
 2. Instruct CakePHP to look for the PDF extension by adding `Router::parseExtensions('pdf');` to `APP/Config/routes.php`. If you already use `Router::parseExtensions` in your project, simply add 'pdf' to the list.
 3. Finally, make sure that the RequestHandlerComponent is loaded for all controllers by adding `public $components = array('RequestHandler');` to `APP/Controller/AppController.php`.
 
 ### Configuration Options
-Eventually, I'll add a paragraph here on how to use the config file located in `APP/Plugin/cakephp-dompdf-view/Config/dompdf.php`.
+Copy the `APP/Plugin/Dompdf/Config/dompdf.php` to `APP/Config` if you want to change any of the default configuration.
 
 ### Layout
 You'll need to create the default layout for your PDF documents by creating a file named `default.ctp` in `APP/View/Layouts/pdf`.
